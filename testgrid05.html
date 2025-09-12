@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* กำหนดขนาดคอลัมน์ */
+        grid-template-rows: 50px 190px 100px 150px 150px 40px; /* กำหนดขนาดแถว */
+        grid-template-areas:
+          "item-1 item-1 item-1 item-1"
+          "item-2 item-2 item-2 item-2"
+          "item-3 item-4 item-5 item-6"
+          "item-7 item-7 item-8 item-8"
+          "item-9 item-9 item-9 item-9"
+          "item-10 item-10 item-10 item-10";
+        gap: 10px;
+      }
+      #item-1 {
+        grid-area: item-1;
+      }
+      #item-2 {
+        grid-area: item-2;
+      }
+      #item-3 {
+        grid-area: item-3;
+      }
+      #item-4 {
+        grid-area: item-4;
+      }
+      #item-5 {
+        grid-area: item-5;
+      }
+      #item-6 {
+        grid-area: item-6;
+      }
+      #item-7 {
+        grid-area: item-7;
+      }
+      #item-8 {
+        grid-area: item-8;
+      }
+      #item-9 {
+        grid-area: item-9;
+      }
+      #item-10 {
+        grid-area: item-10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="iot" id="item-1" style="background-color: #99FF66">A</div>
+      <div class="iot" id="item-2" style="background-color: #FF6600">B</div>
+      <div class="iot" id="item-3" style="background-color: #FF33CC">C</div>
+      <div class="iot" id="item-4" style="background-color: #006699">D</div>
+      <div class="iot" id="item-5" style="background-color: #339933">E</div>
+      <div class="iot" id="item-6" style="background-color: #3333CC">F</div>
+      <div class="iot" id="item-7" style="background-color: #FF0000">G</div>
+      <div class="iot" id="item-8" style="background-color: #66ffff">H</div>
+      <div class="iot" id="item-9" style="background-color: #993300">H</div>
+      <div class="iot" id="item-10" style="background-color: #9933FF">H</div>
+    </div>
+  </body>
+</html>

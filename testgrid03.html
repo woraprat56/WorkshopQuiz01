@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns:1fr 2.5fr 1fr; /* กำหนดขนาดคอลัมน์ */
+        grid-template-rows: 50px 150px 180px 100px 100px; /* กำหนดขนาดแถว */
+        grid-template-areas:
+          "item-1 item-1 item-1"
+          "item-2 item-2 item-2"
+          "item-3 item-4 item-4"
+          "item-3 item-5 item-5"
+          "item-3 item-6 item-7";
+        gap: 6px;
+      }
+      #item-1 {
+        grid-area: item-1;
+      }
+      #item-2 {
+        grid-area: item-2;
+      }
+      #item-3 {
+        grid-area: item-3;
+      }
+      #item-4 {
+        grid-area: item-4;
+      }
+      #item-5 {
+        grid-area: item-5;
+      }
+      #item-6 {
+        grid-area: item-6;
+      }
+      #item-7 {
+        grid-area: item-7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="iot" id="item-1" style="background-color: #99FF99">A</div>
+      <div class="iot" id="item-2" style="background-color: #FF9933">B</div>
+      <div class="iot" id="item-3" style="background-color: #00FFFF">C</div>
+      <div class="iot" id="item-4" style="background-color: #FF66FF">D</div>
+      <div class="iot" id="item-5" style="background-color: #FF0000">E</div>
+      <div class="iot" id="item-6" style="background-color: #3333CC">F</div>
+      <div class="iot" id="item-7" style="background-color: #00CC66">G</div>
+    </div>
+  </body>
+</html>
