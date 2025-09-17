@@ -8,17 +8,15 @@
       .container {
         display: grid;
         justify-content: center;
-        grid-template-columns: 1fr 1fr; /* กำหนดขนาดคอลัมน์ */
-        grid-template-rows: 30px 100px 80px 80px 100px 100px 150px 30px; /* กำหนดขนาดแถว */
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* กำหนดขนาดคอลัมน์ */
+        grid-template-rows: 50px 190px 100px 150px 150px 40px; /* กำหนดขนาดแถว */
         grid-template-areas:
-          "item-1 item-1"
-          "item-2 item-2"
-          "item-3 item-4"
-          "item-5 item-6"
-          "item-7 item-7"
-          "item-8 item-8"
-          "item-9 item-9"
-          "item-10 item-10";
+          "item-1 item-1 item-1 item-1"
+          "item-2 item-2 item-2 item-2"
+          "item-3 item-4 item-5 item-6"
+          "item-7 item-7 item-8 item-8"
+          "item-9 item-9 item-9 item-9"
+          "item-10 item-10 item-10 item-10";
         gap: 10px;
       }
       #item-1 {
@@ -51,20 +49,35 @@
       #item-10 {
         grid-area: item-10;
       }
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 40px 150px 120px 120px 150px 100px 200px 40px;
+          grid-template-areas:
+            "item-1 item-1"
+            "item-2 item-2"
+            "item-3 item-4"
+            "item-5 item-6"
+            "item-7 item-7"
+            "item-8 item-8"
+            "item-9 item-9"
+            "item-10 item-10";
+        }
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="iot" id="item-1" style="background-color: #99FF66">A</div>
-      <div class="iot" id="item-2" style="background-color: #FF6600">B</div>
-      <div class="iot" id="item-3" style="background-color: #FF33CC">C</div>
+      <div class="iot" id="item-1" style="background-color: #99ff66">A</div>
+      <div class="iot" id="item-2" style="background-color: #ff6600">B</div>
+      <div class="iot" id="item-3" style="background-color: #ff33cc">C</div>
       <div class="iot" id="item-4" style="background-color: #006699">D</div>
       <div class="iot" id="item-5" style="background-color: #339933">E</div>
-      <div class="iot" id="item-6" style="background-color: #3333CC">F</div>
-      <div class="iot" id="item-7" style="background-color: #FF0000">G</div>
+      <div class="iot" id="item-6" style="background-color: #3333cc">F</div>
+      <div class="iot" id="item-7" style="background-color: #ff0000">G</div>
       <div class="iot" id="item-8" style="background-color: #66ffff">H</div>
       <div class="iot" id="item-9" style="background-color: #993300">H</div>
-      <div class="iot" id="item-10" style="background-color: #9933FF">H</div>
+      <div class="iot" id="item-10" style="background-color: #9933ff">H</div>
     </div>
   </body>
 </html>
